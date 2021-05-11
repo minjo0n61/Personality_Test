@@ -2,61 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css"> 
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
   <title>성격에 맞는 Member찾기</title>
 </head>
-<body>
-  <div class="wrap">
-    <div class="intro_bg">
-      <div class="header">
-        
-        <ul class="nav">
-          <li><a href="https://www.naver.com">FIND</a></li>
-          <li><a href="#">성격나열</a></li>
-          <li><a href="#">HELP</a></li>
-        </ul>
-        
-      </div>
-      <div class="slidebox">
-        <input type="radio" name="slide" id="slide01" checked>
-        <input type="radio" name="slide" id="slide02" >
-        <input type="radio" name="slide" id="slide03" >
-        <input type="radio" name="slide" id="slide04" >
-        <ul class="slidelist">
-          <li class="slideitem">
-            <div>
-              <label for="slide04" class="left"></label>
-              <label for="slide02" class="right"></label>
-              <a><image src="slideimg01.jpg"></image></a>
-            </div>
-          </li>
-          <li class="slideitem">
-            <div>
-              <label for="slide01" class="left"></label>
-              <label for="slide03" class="right"></label>
-              <a><image src="slideimg02.jpg"></image></a>
-            </div>
-          </li>
-          <li class="slideitem">
-            <div>
-              <label for="slide02" class="left"></label>
-              <label for="slide04" class="right"></label>
-              <a><image src="slideimg03.jpg"></image></a>
-            </div>
-          </li>
-          <li class="slideitem">
-            <div>
-              <label for="slide03" class="left"></label>
-              <label for="slide01" class="right"></label>
-              <a><image src="slideimg04.jpg"></image></a>
-            </div>
-          </li>
-        </ul>
-      </div>
 
-      
+<body>
+  <!-- 해더부분 -->
+  <header>
+    <img src="로고 제작하여 넣기.jpg" alt="LOGO" width="">
+    <!-- 메뉴페이지 -->
+    <nav>
+      <ul white-space:nowrap;>
+        <li><a href="http://팀원찾기 페이지.com">FIND</a></li>
+        <li><a href="http://성격나열 페이지.com">성격나열</a></li>
+        <li><a href="http://HELP 페이지.com">HELP</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- 사진 슬라이드 -->
+  <div class="section">
+    <input type="radio" name="slide" id="slide01" checked>
+    <input type="radio" name="slide" id="slide02" >
+    <input type="radio" name="slide" id="slide03" >
+
+    <div class="slidewrap">
+      <ul class="slidelist">
+        <li>
+          <a>
+            <img src="pic/slideimg01.jpg" width=500px height=150px>
+          </a>
+        </li>
+        <li>
+          <a>
+            <img src="pic/slideimg02.jpg" width=500px height=150px>
+          </a>
+        </li>
+        <li>
+          <a>
+            <img src="pic/slideimg03.jpg" width=500px height=150px>
+          </a>
+        </li>
+        <div class = "slide-control">
+          <div class="control01">
+            <label for ="slide03" class="left"></label>
+            <label for ="slide02" class="right"></label>
+          </div>
+          <div class="control02">
+            <label for ="slide01" class="left"></label>
+            <label for ="slide03" class="right"></label>
+          </div>
+          <div class="control03">
+            <label for ="slide02" class="left"></label>
+            <label for ="slide01" class="right"></label>
+          </div>
+        </div>
+      </ul>
     </div>
   </div>
-
+  <!-- 팀원찾기 미리보기 -->
+  <div style="overflow:scroll; width:60%; height:150px; padding:5px; background-color:gold;">
+    <div style="border: 10px;">
+      <p>최민준<br>한줄소개: 나의 장점은 항상 긍정적이고 맡은 바 최선을 다하는 것입니다!</p>
+    </div>
+  </div>
+  <!-- 로그인 -->
+  <div>
+    <button href="https://naver.com" style="width: 300px; height: 200px;">
+      Logo 로그인
+    </button>
+    <img src="자물쇠 모양.jpg" width="30px">
+    <a href="아이디 찾기 화면.com">아이디 찾기</a>
+    <a href="비밀번호 찾기 화면.com">비밀번호 찾기</a>
+  </div>
 </body>
 </html>
