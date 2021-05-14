@@ -9,12 +9,16 @@ li {
   list-style: none;
 }
 
-.header {
+.main{
+  height: 1200px;
+}
+.fixed{
   display: flex;
   width: 1280px;
   margin: auto;
   background: greenyellow;
   height: 86px;
+  position: fixed;
 }
 
 .nav {
